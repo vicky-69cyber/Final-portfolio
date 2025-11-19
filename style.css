@@ -1,55 +1,55 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(110deg, #053ada, #032239);
-
 }
-
-/* Navigation */
-
+/*NAV BAR  */
 .navbar {
     display: flex;
     justify-content: space-between;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-        rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 20px;
-    backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 100;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .navbar h1 {
     font-size: 30px;
+    color: white;
 }
 
 .navbar-link a {
-    padding: 20px;
-    margin-top: 10px;
+    margin-left: 10px;
     text-decoration: none;
     color: #fffdab;
     font-size: 20px;
-    transition: all 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .navbar-link a:hover {
-    transform: scale(1.1);
     color: #ff8800;
-    font-weight: 100;
+    transform: scale(1.05);
 }
 
-/* Hero Section */
+/* HERO */
 .hero {
-    padding: 20px 60px;
-    text-align: center;
-    margin-top: 20px;
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px 60px;
 }
 
 .hero h2 {
@@ -60,269 +60,241 @@ body {
 
 .hero-int h3 {
     font-size: 2rem;
-    font-weight: 100;
-    margin-bottom: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #fffdcc;
 }
 
 .hero-int p {
     font-size: 1.3rem;
     font-weight: 300;
     margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
 .btn {
     display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
     background: white;
     color: #053ada;
-    padding: 12px 24px;
-    margin: 1.1rem;
-    border-radius: 10px;
     text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
+    border-radius: 10px;
     font-size: 1.1rem;
-    transition: all 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    cursor: pointer;
     background: #053ada;
     color: white;
     transform: scale(1.05);
 }
 
-/* About section */
-
+/* ABOUT */
 .about {
-    text-align: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
+    text-align: center;
     padding: 20px 60px;
 }
 
 .about h2 {
-    color: white;
     font-size: 1.8rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 .about-container {
-    background: transparent;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 60px;
+    margin-bottom: 25px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 60px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    transition: all 0.5s ease;
-}
-
-.about-container:hover {
-    transform: scale(1.05);
+    transition: 0.3s ease;
 }
 
 .about-container p {
     font-size: 1.3rem;
-    line-height: 2;
+    line-height: 1.9;
+    color: #efefef;
 }
 
-/* Skill */
+.about-container:hover {
+    transform: scale(1.03);
+}
 
+/* SKILLS */
 .skill-container {
-    text-align: center;
     width: 80%;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 20px 60px;
-    margin-bottom: 20px;
 }
 
 .skill-container h2 {
     text-align: left;
-    color: white;
     font-size: 1.8rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 .skill-box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    background: transparent;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    gap: 1.3rem;
     padding: 40px;
     border-radius: 15px;
-    transition: all 0.5s ease;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .skill-box div {
     background: #ff8800;
     color: white;
     padding: 12px 24px;
-    font-weight: 600;
+    text-align: center;
     border-radius: 10px;
-    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-/* project section */
-
+/* PROJECT  */
 .project {
-    text-align: center;
     width: 100%;
-    margin: 0px auto;
+    margin: 20px auto;
+    text-align: center;
     padding: 20px 60px;
-    margin-bottom: 20px;
 }
 
 .project h2 {
     font-size: 1.8rem;
-    color: white;
     margin-bottom: 20px;
+    color: white;
 }
 
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 2rem;
+    gap: 1.5rem;
+    margin: 20px auto;
 }
 
 .project-box {
-    background: transparent;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    border-radius: 15px;
     background: rgba(255, 255, 255, 0.12);
     border: 1px solid rgba(255, 255, 255, 0.25);
-    margin: 20px;
-    padding: 30px 30px;
-    border-radius: 15px;
-    transition: all 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .project-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .project-box h3 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    background: #ff8800;
-    border-radius: 10px;
-    color: white;
-    font-weight: 300;
     padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    background: #ff8800;
+    color: white;
+    border-radius: 10px;
 }
 
 .project-box p {
-    font-size: 20px;
-    font-weight: 100;
-    color: black;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #dedede;
+}
+
+.project-box a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 18px;
+    background: white;
+    color: #053ada;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.project-box a:hover {
+    background: #053ada;
+    color: white;
+    transform: scale(1.05);
 }
 
 .project-box span {
+    margin: 5px;
+    padding: 10px 18px;
+    display: inline-block;
     background: #ff8800;
-    color: white;
-    padding: 12px 24px;
     border-radius: 10px;
-    margin: 10px;
+    color: white;
     font-weight: 600;
 }
 
-/* contact section */
-
+/* CONTACT */
 .contact {
     width: 80%;
-    margin: 80px auto;
+    margin: 60px auto;
     text-align: center;
     padding: 20px 60px;
-    
 }
 
 .contact h2 {
     font-size: 2rem;
-    color: white;
     margin-bottom: 15px;
-}
-
-.contact-form {
-    font-size: 1.2rem;
-    max-width: 650px;
-    margin: 0 auto 30px;
-    line-height: 1.7;
-    opacity: 0.8;
 }
 
 .contact-box {
     width: 60%;
     margin: auto;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
     padding: 40px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    backdrop-filter: blur(10px);
     gap: 15px;
-    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .contact-item {
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     padding: 20px;
     border-radius: 15px;
-    transition: all 0.3s ease;
-    text-align: left;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    transition: 0.3s;
 }
 
 .contact-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
-.contact-box i {
-    font-size: 2rem;
-}
-
-.contact-btn{
-    background: white;
-    color: #ff8800;
-    padding: 12px 24px;
-    font-weight: 600;
-    border-radius: 15px;
-    text-decoration: none;
-    transition: all 0.5s ease;
-}
-
-.contact-btn:hover{
-    background: #ff8800;
-    color: white;
-}
-
-/* Github Link Style */
 .contact-item a {
     color: #ff8800;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: white;
+    color: #ff8800;
+    border-radius: 15px;
     text-decoration: none;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
-.contact-item a:hover {
-    color: black;
-    text-shadow: 0 0 10px black;
-    transform: scale(1.05);
-    display: inline-block;
+.contact-btn:hover {
+    background: #ff8800;
+    color: white;
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-/* ------------------------------------
-   📱 Mobile / Tablet Responsive Layout
------------------------------------- */
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
-    
     .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -334,133 +306,40 @@ html{
 
 @media (max-width: 768px) {
 
-    /* Navbar */
     .navbar {
         flex-direction: column;
-        text-align: center;
         gap: 10px;
-        padding: 15px;
+        text-align: center;
     }
 
-    .navbar-link a {
-        padding: 10px;
-        font-size: 16px;
-    }
-
-
-    /* Hero Section */
-    .hero {
+    .hero,
+    .about,
+    .skill-container,
+    .project,
+    .contact {
         width: 95%;
         padding: 20px;
     }
 
-    .hero h2 {
-        font-size: 2.2rem;
-    }
-
-    .hero-int h3 {
-        font-size: 1.3rem;
-    }
-
-    .hero-int p {
-        font-size: 1rem;
-        padding: 0 10px;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 1rem;
-        margin: 10px;
-    }
-
-
-    /* About Section */
-    .about, .skill-container, .project, .contact {
-        width: 95%;
-        padding: 20px;
-    }
-
-    .about-container {
-        padding: 30px;
-    }
-
-    .about-container p {
-        font-size: 1.1rem;
-    }
-
-
-    /* Skills Section */
-    .skill-box {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-    }
-
-    .skill-box div {
-        font-size: 1rem;
-        padding: 10px 15px;
-    }
-
-
-    /* Projects */
     .project-container {
-        grid-template-columns: repeat(1, 1fr);
-        margin: 1rem 0;
-        gap: 1rem;
+        grid-template-columns: 1fr;
     }
 
-    .project-box {
-        margin: 10px;
-        padding: 20px;
-    }
-
-    .project-box p {
-        font-size: 1rem;
-        text-align: left;
-    }
-
-
-    /* Contact Section */
     .contact-box {
         width: 100%;
-        padding: 20px;
-    }
-
-    .contact-item {
-        padding: 15px;
-    }
-
-    .contact-btn {
-        font-size: 1rem;
-        padding: 10px 20px;
     }
 }
 
-/* Extra Small Screens */
 @media (max-width: 480px) {
-
     .hero h2 {
-        font-size: 1.8rem;
-    }
-
-    .hero-int h3 {
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
 
     .skill-box {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .project-box h3 {
-        font-size: 1.2rem;
+        grid-template-columns: 1fr;
     }
 
     .project-box span {
-        padding: 8px 14px;
-        margin: 5px;
         font-size: 0.85rem;
-    }
-
-    .contact-item i {
-        font-size: 1.5rem;
     }
 }
