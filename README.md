@@ -13,7 +13,7 @@
 https://final-portfolio-omega-rosy.vercel.app/  
 
 > 📎 **Backup Deployment (GitHub Pages):**  
-https://vicky-69cyber.github.io/Final-portfolio/
+https://github.com/vicky-69cyber/Final-portfolio
 
 ---
 
